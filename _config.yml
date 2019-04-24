@@ -1,0 +1,4 @@
+theme: jekyll-theme-hacker
+name: Boris Jamot | Awesome Dev
+markdown: kramdown
+permalink: /devto/:year/:month/:day/:title
