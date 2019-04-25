@@ -11,7 +11,7 @@ github_username:  mamyn0va
 
 # Build settings
 markdown: kramdown
-theme: hacker
+theme: minima
 plugins:
   - jekyll-feed
 
