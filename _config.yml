@@ -9,7 +9,7 @@ github_username:  mamyn0va
 # Build settings
 markdown: kramdown
 #theme: minima
-theme: jekyll-theme-hacker
+theme: jekyll-theme-slate
 #remote_theme: pietromenna/jekyll-cayman-theme
 plugins:
   - jekyll-feed
