@@ -1,5 +1,5 @@
 ---
-title: Building a Custom IDE with Tmux
+title:  Building a Custom IDE with Tmux
 published: true
 description: Building a Custom IDE with Tmux
 tags: cli, showdev, craftsmanship, githunt
