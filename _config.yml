@@ -1,12 +1,10 @@
 title: Boris Jamot's Blog
 name: Boris Jamot | Awesome Dev
-#email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is my personal blog, mainly focused on dev topics (PHP, Golang, productivity, quality and so on)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mamyn0va
-#permalink: /blog/:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
