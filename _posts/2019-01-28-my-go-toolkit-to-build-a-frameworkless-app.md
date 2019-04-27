@@ -20,7 +20,7 @@ Now it's the time to share about the libraries & tools I've been using so far. N
 
 ![viper](https://cloud.githubusercontent.com/assets/173412/10886745/998df88a-8151-11e5-9448-4736db51020d.png){:width="300px"}
 
-🙋 **Purpose:** Viper is a full-featured configuration library for production apps*<br/>
+🙋 **Purpose:** *Viper is a full-featured configuration library for production apps*<br/>
 🌠 7,353<br/>
  [spf13/viper](https://github.com/spf13/viper)
 
