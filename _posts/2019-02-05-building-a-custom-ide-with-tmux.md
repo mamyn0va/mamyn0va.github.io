@@ -1,5 +1,5 @@
 ---
-title:  Building a Custom IDE with Tmux
+title: Building a Custom IDE with Tmux
 published: true
 description: Building a Custom IDE with Tmux
 tags: cli, showdev, craftsmanship, githunt
@@ -14,7 +14,7 @@ As a software craftsman and [CLI lover]({{ site.baseurl }}{% post_url 2018-08-16
 
 Let me show you how I use *tmux* as the foundation of what I call *my custom IDE*.
 
-## Why Tmux?
+## <i class="fas fa-terminal"></i> Why Tmux?
 
 > Tmux is a wonderful terminal multiplexer that comes with some plugins.
 
