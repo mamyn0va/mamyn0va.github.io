@@ -1,6 +1,6 @@
 title: Boris Jamot's Blog
 description: >- # this means to ignore newlines until "baseurl:"
-  This is my personal blog, mainly focused on dev topics (PHP, Golang, productivity, quality and so on)
+  This is my personal blog, mainly focused on dev topics (PHP, Golang, productivity, quality...)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mamyn0va
