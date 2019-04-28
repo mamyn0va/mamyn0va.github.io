@@ -6,7 +6,7 @@ tags: cli, showdev, craftsmanship, githunt
 cover_image: https://thepracticaldev.s3.amazonaws.com/i/veaudjcdm0zytasomxpn.png
 ---
 
-## Hi!
+## <i class="fas fa-terminal"></i> Hi!
 
 Today, I want to share about a tool I've been using for a few months and which helps me a lot in my day to day job: [tmux](https://github.com/tmux/tmux/wiki).
 
@@ -23,7 +23,7 @@ In fact, it comes that *tmux* is much more powerful for splitting and resizing w
 The other reason is that *tmux* can work with any term. So if you change your term, you don't need to reconfigure all your presets. *Tmux* does it for you. 
 And you can also use *tmux* without X, in a simple `tty`.
 
-### Install it
+### <i class="fas fa-terminal"></i> Install it
 
 Install *tmux* through your favorite package manager, or compile it from the sources:
 
@@ -34,7 +34,7 @@ $ sh autogen.sh
 $ ./configure && make
 ```
 
-### Configure it
+### <i class="fas fa-terminal"></i> Configure it
 
 *Tmux* may look a bit raw and difficult to handle at the beginning. Fortunately, it comes with a great community that helps a lot to set it up. After trying many configurations, I've ended up with the one of [gpakosz](https://github.com/gpakosz/.tmux):
 
@@ -51,7 +51,7 @@ Personally, I find it useless to have the uptime in my status bar, so I removed 
 - [tmux-plugins/tmux-open](https://github.com/tmux-plugins/tmux-open) *Key bindings for quick opening of a highlighted file or url*
 - [chriszarate/tmux-tasks](https://github.com/chriszarate/tmux-tasks) *Display the count of (urgent) tasks in the status bar. Requires [taskwarrior](https://github.com/GothenburgBitFactory/taskwarrior).*
 
-### Use it
+### <i class="fas fa-terminal"></i> Use it
 
 You have to set *tmux* as your default shell in your preferred terminal emulator. Once done, *tmux* will be launched each time you open a new term.
 
@@ -69,7 +69,7 @@ Here are the main bindings I use:
 
 Now, if you feel uncomfortable with bindings, *tmux* has a great mouse mode, allowing you to select, switch and resize panes.
 
-### Get the most of it
+### <i class="fas fa-terminal"></i> Get the most of it
 
 The killer feature of *tmux* is the **sessions**. Imagine you want to build a window with 3 panes for editing a file, play with git and run your tests. Just create a new session, split the panes and adjust their size to your needs.
 
