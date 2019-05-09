@@ -16,7 +16,7 @@ I introduced one of my previous post by saying that PHP was my main language and
 
 I really enjoy strong typing and compilation. I can have real-time feedback on my code without running it and without additional 3rd-party tools. The Go SDK is fully featured for linting, formatting, testing, compiling, running.
 
-# Reading from request's body
+# <i class="fas fa-terminal"></i> Reading from request's body
 
 In my previous post, I was also saying that Go was a language for craftsmen. But this was far from the truth. I'll take an example: in Go, if you want to read the HTTP request's body in a middleware to analyze it for logging purpose, it becomes tricky:
 
@@ -44,7 +44,7 @@ func LoggingMiddleware(handler http.Handler) http.Handler {
 
 As you may guess, reading the request's body makes it empty. That's why you have to re-assign it afterwards. That's because request's body is a kind of stream you can read byte after byte. It can be useful if you want to start the request's processing without having to read all the data. But in most cases, you don't need that.
 
-# (un)-marshalling
+# <i class="fas fa-terminal"></i> (un)-marshalling
 
 (un)marshalling is another thing that is not straightforward. What you need to know is that unmarshalling from JSON, BSON, YAML or whatever to a struct will almost never fail.
 
@@ -87,7 +87,7 @@ What really confused me was that I expected unmarshalling to fail with missing a
 
 *If someone knows a better solution, don't hesitate!*
 
-# Unit testing
+# <i class="fas fa-terminal"></i> Unit testing
 
 Writing unit tests is the worst part of my developer journey in Golang. As an experimented OOP developer in PHP and Java, I used to write a lot of unit tests to have the best code coverage I can reach. In order to achieve it, I design my code with a high usage of dependency injection to allow me to replace dependencies by mocks in unit tests. 
 
@@ -97,13 +97,13 @@ The drawback of writing interfaces for dependency injection is that you will los
 
 *Knowing that, I would recommend to prefer "mocking-ready" libraries. It will save your time!*
 
-## Mocking your dependencies
+## <i class="fas fa-terminal"></i> Mocking your dependencies
 
 Depending on your testing strategy, you may have to mock some parts of your code, or some external library. As I said earlier, the first thing is to use interfaces instead of structs in your code, wether it be in the prototypes of your functions or in a Dependency Injection Container.
 
 The principle is really simple: you just have to switch the real object with a struct implementing the interface you want to mock. You can do it manually, or you can do it with [gomock](https://github.com/golang/mock) if you want a fully featured mock, allowing you to count the number of calls, to check the types or even to capture the arguments. The only drawback of gomock is that you have to generate the mocks manually, and to update them each time you modify the interface. You also have to commit the mocks along with your "real" code.
 
-# My custom development environment
+# <i class="fas fa-terminal"></i> My custom development environment
 
 In my first post about Go, I was saying that I tried many IDE: Atom, Intellij Ultimate and Vim. After that, I also tried Visual Studio Code which was pretty nice, but none of them fully statisfied me. So, as many of my colleagues use Intellij, I gave it a new try and finally succeeded to make it work. I use it to write code, but also to debug and to browse the code.
 
@@ -111,9 +111,12 @@ Apart from Intellij, I also have a customized terminal with 3 panes using tmux. 
 - any modification of the codebase triggers a new run of my app (`go run ./...`),
 - any modification of a test file triggers the tests (`go test ./...`)
 - any modification of my conf files triggers a new check using [pykwalify](https://github.com/Grokzen/pykwalify) which is a JSON/YAML validator.
+
 The 3rd pane is a Vim allowing me to quickly edit files.
 
-# Conclusion
+If you're interested by getting into `tmux`, you can have a loot at this [other post]({{ site.baseurl }}{% post_url 2019-02-05-building-a-custom-ide-with-tmux %}).
+
+# <i class="fas fa-terminal"></i> Conclusion
 
 What I miss the most as a PHP developer is the community and the online resources. It seems like the official Go doc (which is great) is quite the only available resource, except posts on StackOverflow.
 What is also confusing is that if you google something like "go + stuff", you won't get many results. You'll have more luck with "golang + stuff".

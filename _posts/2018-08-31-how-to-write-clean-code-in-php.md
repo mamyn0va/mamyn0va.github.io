@@ -39,7 +39,7 @@ Let it be clear that, of course, tooling has never made by itself the quality of
 
 
 
-## ✔️ Code static analysis tools
+## <i class="fas fa-terminal"></i> Code static analysis tools ✔️
 
 The [PHP-FIG](https://www.php-fig.org)​ consortium publishes a [set of recommendations](https://www.php-fig.org/psr/) that aims to standardize the use of PHP and to facilitate its interoperability. Three of them focus on the coding style and on stuff like the auto-loading, the encoding, and so on:
 - PSR1 : [Basic Coding Standard](https://www.php-fig.org/psr/psr-1/)
@@ -49,13 +49,13 @@ The [PHP-FIG](https://www.php-fig.org)​ consortium publishes a [set of recomme
 > The tool listed below are widely adopted by the PHP community and are actively supported/maintained.
 
 
-### [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) (aka phpcs)
+### <i class="fas fa-terminal"></i> [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) (aka phpcs)
 
 Fortunately, we don't need to know all the details of the PSR specifications (even if it would be better), because some tools can do (a part of) the job for us. I mean, pretty-printing the code to make it compliant with the PSRs and detect violations. And as time goes on and with experience, it will become natural for you.
 
 **PHP_CodeSniffer** detects PSR1/PSR2 violations, and a lot more with the Squiz standard that check 130 rules (7 rules for PSR1 and 42 for PSR2) and that also works with CSS and JS. That being so, it is a good compromise to start with the PSR2 standard and then to create your own standard (aka ruleset) from the PSR2, and to enrich it with the Squiz rules that you need.
 
-#### 💡 phpcs installation
+#### <i class="fas fa-terminal"></i> phpcs installation 💡
 
 This will add phpcs as a project dependency:
 
@@ -70,7 +70,7 @@ composer global require "squizlabs/php_codesniffer"
 export PATH=$PATH:~/path/to/composer/vendor/bin
 ```
 
-#### 🆘 phpcs usage
+#### <i class="fas fa-terminal"></i> phpcs usage 🆘
 
 Now, consider the following PHP example that contains some violations...
 
@@ -106,7 +106,7 @@ To go further, you can have a look at the [phpcs_psr2](https://gitlab.com/mamyn0
 
 
 
-### PHP Code Beautifier and Fixer (aka phpcbf)
+### <i class="fas fa-terminal"></i> PHP Code Beautifier and Fixer (aka phpcbf)
 
 
 Well, it's nice to detect violations, but it's even better if we can correct them automatically, right? Fortunately, **PHP_CodeSniffer** comes with another utility that fixes the main PSR1 and PSR2 violations: **PHP Code Beautifier and Fixer** (aka phpcbf). Just run it on a PHP file or on a code base, and it will scan all the files and try to automatically fix the violations:
@@ -138,7 +138,7 @@ class MaClasse
 Now it's your turn to play around with it and create your own ruleset that fits your needs, your teammates' need and your project needs. Of course, this **MUST** be shared with the other devs to have an homogenous codebase and to be able to work together.
 
 
-### [PHP Mess Detector](https://phpmd.org/) (aka phpmd)
+### <i class="fas fa-terminal"></i> [PHP Mess Detector](https://phpmd.org/) (aka phpmd)
 
 
 In the same way as Java and its [PMD](https://pmd.github.io/), PHP also has its own mess detection tool. Through a rulesets mechanism (like PHP_CodeSniffer), this tool will detect many violations towards the *clean code* philosophy:
@@ -148,7 +148,7 @@ In the same way as Java and its [PMD](https://pmd.github.io/), PHP also has its 
 - unused parameters, methods, properties
 - ...
 
-#### 💡 phpmd installation
+#### <i class="fas fa-terminal"></i> phpmd installation 💡
 
 ```shell
 composer require phpmd/phpmd
@@ -156,7 +156,7 @@ composer require phpmd/phpmd
 
 Then, you need to provide phpmd with a file or directory, and to specify an output format (text, XML or HTML) and one or more rulesets.
 
-#### 🆘 phpmd usage
+#### <i class="fas fa-terminal"></i> phpmd usage 🆘
 
 Let's take the previously fixed example with phpcbf/PSR2, and add a unused variable in it:
 
@@ -225,21 +225,20 @@ Please find below a custom ruleset that you can use to start with phpmd:
 ```
 
 
-
-### [PHP Coding Standards Fixer](https://github.com/FriendsOfPhp/PHP-CS-Fixer) (aka php-cs-fixer)
+### <i class="fas fa-terminal"></i> [PHP Coding Standards Fixer](https://github.com/FriendsOfPhp/PHP-CS-Fixer) (aka php-cs-fixer)
 
 
 > What if we ended with another tool? If you had to choose only one tool, it would be this one.
 
 It does nearly the same things as **phpcbf**, namely fix PSR rules, but it does it better and deeper. Like phpcbf, it also allow you to add some other rules from a list of [172 rules](https://github.com/FriendsOfPhp/PHP-CS-Fixer#usage). The other cool thing about it is the creation of the ruleset file which is a PHP file and not a verbose XML.
 
-#### 💡 php-cs-fixer installation
+#### <i class="fas fa-terminal"></i> php-cs-fixer installation 💡
 
 ```shell
 composer require friendsofphp/php-cs-fixer
 ```
 
-#### 🆘 php-cs-fixer usage
+#### <i class="fas fa-terminal"></i> php-cs-fixer usage 🆘
 
 ```shell
 php-cs-fixer --verbose fix MaClasse.php
@@ -348,7 +347,7 @@ Closing on the tooling, you must consider it as an integral part of your app, th
 This is true for PHP, but also for any kind of language. This is the only way to have an *homogeneous codebase* over time within your team.
 
 
-### 🛠️ To go further
+### <i class="fas fa-terminal"></i> To go further 🛠️
 
 - [phan](https://github.com/phan/phan) : a powerful code static analyzer
 - [phpstan](https://github.com/phpstan/phpstan) : PHP Static Analyzis Tool

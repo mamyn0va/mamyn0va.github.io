@@ -8,7 +8,7 @@ cover_image: https://thepracticaldev.s3.amazonaws.com/i/c5rypwl3ykxxzvuvmkld.png
 
 Hi folks! I'm going to talk about the way I use to design my unit tests in PHP.
 
-## Disclaimer
+## <i class="fas fa-terminal"></i> Disclaimer
 
 Let's start with a (my?) definition of unit testing:
 
@@ -22,7 +22,7 @@ I won't be talking about the way of making the code testable. I know two techniq
 - first, you can modify the interface of your function to pass all its dependencies as parameters (or using the constructor or setters),
 - or you can use a **Dependency Injection Container** (aka DIC) which is a common (anti?)pattern in software development (see [PHP's PSR11](https://www.php-fig.org/psr/psr-11/) for further details).
 
-## Code architecture
+## <i class="fas fa-terminal"></i> Code architecture
 
 When I start a new web project, I usually split my code in several distinct layers:
 - a *router* (usually Slim router), responsible for processing HTTP requests,
@@ -53,7 +53,7 @@ The classical workflow is:
 
 When I write unit tests for a given layer, I only test the behavior of the layer's functions and I mock the calls to the functions of the sub-layers. For example, when I write a test for a *controller*, I mock the call to the *business* layer, to the *checker* and to the *view*. When I write a test for a *business* object, I mock the call to the *mapper*, to the *enabler* and to other *business* objects.
 
-## Example
+## <i class="fas fa-terminal"></i> Example
 
 Let's see what it looks like for a *controller* with a bit of code:
 
@@ -89,7 +89,7 @@ class UserController
 
 Here you can see 3 dependencies in the `getById` function. I choose to pass these dependencies through the constructor of my `UserController` class. Alternatively, I could have used a Container passed to the function (or to the constructor), or I could have passed the deps through the function's parameters. The result would have been the same: I have to mock these 3 deps to test the function.
 
-## Using mocks
+## <i class="fas fa-terminal"></i> Using mocks
 
 Thankfully, [PHPUnit](https://phpunit.de/) comes with a great API to work with mocks (see [Test Doubles](https://phpunit.readthedocs.io/en/7.4/test-doubles.html)). I won't cover all the features here, but the documentation worth a look.
 
@@ -135,7 +135,7 @@ class UserControllerTest extends PHPUnit\Framework\TestCase
 
 The same has to be done for every layers.
 
-## Conclusion
+## <i class="fas fa-terminal"></i> Conclusion
 
 Writing exhaustive unit tests can be painful as most of the time, you'll spent more time writing the test than writing the "real" code.
 But IMO, there is no acceptable trade-off when it comes to testing your app.

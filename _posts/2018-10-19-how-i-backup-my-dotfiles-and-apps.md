@@ -8,7 +8,7 @@ cover_image: https://thepracticaldev.s3.amazonaws.com/i/nb6ovj9wqgr0v2s13fdh.jpg
 
 My concern is to automatize the backup of my configuration files (aka dotfiles) and to generate a snapshot of all installed apps, whether it be through my distro's package manager or throw third-party package manager like `npm` or `pip`. This is the first step before being able to sync my apps automatically on a newly installed computer (still to be done).
 
-## Backuping dotfiles
+## <i class="fas fa-terminal"></i> Backuping dotfiles
 
 What I did is create a git repo in my `$HOME` dir as all my dotfiles are located here. But as I don't want to push all the other files (Pictures, Downloads, Desktop...), I put a `.gitignore` file with just a wildcard (`*`) in it. This way, when I want to add a file to the repo, I have to force with: `git add -f newfile`.
 
@@ -33,7 +33,7 @@ Thus, you have a quick way to retrieve your configuration in case of a computer 
 
 The next step is to do the same with your apps.
 
-## Generate a snapshot of your apps
+## <i class="fas fa-terminal"></i> Generate a snapshot of your apps
 
 Regarding the apps, it's not so easy. It's not unusual to have several package managers to install new apps. Personally, I use 7 of them: `npm`, `cargo`, `ghc-pkg`, `composer`, `gem`, `pip`, and `pacman`, the manager of my Manjaro linux distribution. Each of them has its own syntax to install, delete or update packages.
 But each of them also has its own syntax to output a list of installed packages.

@@ -29,7 +29,7 @@ It may seem philosophic, but in an IDE, we may sometimes feel constrained and re
 Of course, if you're under Windows, you'll get into some troubles, because terminal emulators have their limits, but if you're convinced by the CLI, you'll take the plunge by switching to Linux (or maybe just use WSL if you're under Windows 10 :)).
 
 
-## 🐟 fish shell
+## <i class="fas fa-terminal"></i> fish shell 🐟
 
 
 [fish shell (or "fish")](https://fishshell.com/) is a shell oriented to the user interaction, in opposition to **Bash** which is more scripting-oriented. Thus, it's a good candidate for a daily and interactive usage.
@@ -49,7 +49,7 @@ Two frameworks allow to enhance the fish features: [oh-my-fish](https://github.c
 Both of them allow to install themes for the prompt and plugins.
 
 
-### 💲 prompt
+### <i class="fas fa-terminal"></i> prompt 💲
 
 
 At first sight, customize his prompt may seem useless, but if the CLI is your main UI, then it becomes mandatory.
@@ -93,7 +93,7 @@ Apart from the prompt, many plugins allow to enhance the user journey, in partic
 - [g2](https://github.com/fisherman/g2) is a wrapper to simplify the **git** usage.
 
 
-### 💄 pimp my terminal!
+### <i class="fas fa-terminal"></i> pimp my terminal! 💄
 
 
 - [colorls](https://github.com/athityakumar/colorls) (`gem install colorls`) -- This `ls` wrapper really is a *must have*. It colors **stdout**; it uses colors intensity to emphasize the modification date of the current directory's files; it makes the file sizes *human readable*; and, on top of that, it displays the **git** status of current files/folders!
@@ -101,7 +101,7 @@ Apart from the prompt, many plugins allow to enhance the user journey, in partic
     ![colorls](https://thepracticaldev.s3.amazonaws.com/i/r4vltr66ur6uvt61a6oo.png)
 
 
-### 🌈 color my logs!
+### <i class="fas fa-terminal"></i> color my logs! 🌈
 
 
 If you, like me, are a developer or a devops engineer, visualizing logs is thus a recurring task of your job and it becomes mandatory to have the good tools to be productive.
@@ -127,8 +127,7 @@ The benefit of **jq** is that on top of the JSON syntax highlighting, it automat
 Thus, by tailing each of your log files with `tail -f` in a dedicated term, and by piping stdout to **jq** or **ccze** depending on the type, you'll have a quick access to the information you need, formatted in an elegant way.
 
 
-## 👾 other awesome CLI tools
-
+## <i class="fas fa-terminal"></i> other awesome CLI tools 👾
 
 -    [ccat](https://github.com/jingweno/ccat) : syntax highlighting for **cat**
 -    [tig](https://github.com/jonas/tig) : allows to enhance the ouput of many known **git** commands (e.g. `git log | tig`)

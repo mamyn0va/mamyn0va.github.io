@@ -7,7 +7,7 @@ cover_image: https://thepracticaldev.s3.amazonaws.com/i/4wh6jqve5w0nio45ot6v.png
 series: How to Ensure You Write Clean Code
 ---
 
-## Table of content
+## <i class="fas fa-terminal"></i> Table of content
 
 - [How to embed code analysis tools in your workflow](#embed) ❓
   - 📝 [In your editor or IDE](#in-ide)
@@ -24,7 +24,7 @@ Previously, we focused on some widely adopted code quality tools for PHP ([phpcs
 
 ---
 
-## How to embed code analysis tools in your workflow❓ <a name="embed"/>
+## <i class="fas fa-terminal"></i> How to embed code analysis tools in your workflow❓ <a name="embed"/>
 
 Using the CLI to manually check your code is cool (really? 🤔), but not very productive. Let's automatize ⚙ that a bit!
 
