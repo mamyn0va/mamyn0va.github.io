@@ -14,25 +14,23 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     {%- for post in site.posts -%}
-      <div>
+      <div style="border-width: 1px; border-style: solid; box-shadow: 4px 4px 0px #aaa; margin-bottom: 3%; padding: 2%; padding-bottom: 5%; border-radius: 0.5em; background-color:#e8e8ee">
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h3>
-        <div style="margin-left: 10px; margin-bottom: 20px">
-          <div>{{ post.description }}</div>
+        <div style="margin-left: 2%; margin-bottom: 0px;">
+          <div style="margin-top: 2%; margin-bottom: 2%">{{ post.description }}</div>
           
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <div class="post-meta"><em>{{ post.date | date: date_format }}</em></div>
-
+          <div style="float: left">
           {%- for tag in post.tags -%}
             <a class="tag" href="">#{{ tag }}</a>
           {%- endfor -%}
+          </div>
 
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <div style="font-size: 80%; float: right"><em>📅 {{ post.date | date: date_format }}</em></div>
         </div>
       </div>
     {%- endfor -%}
