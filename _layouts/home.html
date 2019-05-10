@@ -14,13 +14,13 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     {%- for post in site.posts -%}
-      <div style="border-width: 1px; border-style: solid; box-shadow: 4px 4px 0px #aaa; margin-bottom: 3%; padding: 2%; padding-bottom: 5%; border-radius: 0.5em; background-color:#e8e8ee">
+      <div style="border-width: 1px; border-style: solid; box-shadow: 4px 4px 0px #aaa; margin-bottom: 5%; padding: 2%; padding-bottom: 5%; border-radius: 0.5em; background-color:#e8e8ee">
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h3>
-        <div style="margin-left: 2%; margin-bottom: 0px;">
+        <div style="margin-left: 2%;">
           <div style="margin-top: 2%; margin-bottom: 2%">{{ post.description }}</div>
           
           <div style="float: left">
