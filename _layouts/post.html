@@ -27,6 +27,35 @@ layout: default
     {%- include disqus_comments.html -%}
   {%- endif -%}
 
+  <br/>
+
+  <h2>Leave a comment!</h2>
+
+  <form method="POST" action="{{ site.staticman_url }}">
+    <input name="options[redirect]" type="hidden" value="{{ site.url | append: page.url }}">
+    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+    <p><textarea name="fields[message]" cols="62" rows="4" placeholder="your message"></textarea></p>
+    <p>
+      <input name="fields[name]" type="text" placeholder="name">
+      <input name="fields[email]" type="email" placeholder="email">
+      <button type="submit">Send!</button>
+    </p>
+  </form>
+
+  {% assign comments = site.data.comments[page.slug] %}
+
+  {%- if comments.size > 0 -%}
+
+  <h3>{{ comments | size }} comment(s)</h3>
+
+  {% for comment in comments %}
+    <div style="border-bottom:#373737;border-bottom-style:solid;border-bottom-width:2px">
+      <p><strong>{{ comment[1].name }}</strong> on {{ comment[1].date | date: "%-d %B %Y" }}</p>
+      <p>{{ comment[1].message }}</p>
+    </div>
+  {% endfor %}
+
+  {%- endif -%}
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
