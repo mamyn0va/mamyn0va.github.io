@@ -1,8 +1,8 @@
 ---
 title: Building a Custom IDE with Tmux
 published: true
-description: Building a Custom IDE with Tmux
-tags: cli, showdev, craftsmanship, githunt
+description: How to set up tmux & tmuxp to build a reproducible development environment
+tags: tmux, cli, showdev, craftsmanship
 cover_image: https://thepracticaldev.s3.amazonaws.com/i/veaudjcdm0zytasomxpn.png
 ---
 

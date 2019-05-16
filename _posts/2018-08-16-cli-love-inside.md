@@ -3,12 +3,10 @@ layout: post
 title: CLI Love Inside ❤️
 date: 2018-08-16
 published: true
-description: How to use your terminal + shell to enhance your productivity?
+description: How to use your terminal, shell and some awesome CLI apps to enhance your productivity?
 tags: terminal, shell, cli, fish
 cover_image: https://thepracticaldev.s3.amazonaws.com/i/ev7k947sk6c88zfxji5k.png
 ---
-
-![fish logo](https://thepracticaldev.s3.amazonaws.com/i/9oidjshiaqgz6rkp4dac.png)
 
 > The command line is a powerful tool, and sadly forsaken by most of us.
 

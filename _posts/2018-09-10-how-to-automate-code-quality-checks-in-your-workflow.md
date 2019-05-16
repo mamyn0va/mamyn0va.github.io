@@ -1,7 +1,7 @@
 ---
 title: 🚥 How to Automate Code Quality Checks in your Workflow? ⚙
 published: true
-description: How to master your code through your project lifecycle
+description: If you're interested in code quality and automation, you will be interested by knowing how to set up static analysis tools at each step of your project workflow (editor, git, CI/CD)
 tags: git, automation, cleancode, bash 
 cover_image: https://thepracticaldev.s3.amazonaws.com/i/4wh6jqve5w0nio45ot6v.png
 series: How to Ensure You Write Clean Code

@@ -1,7 +1,7 @@
 ---
-title: My Go Toolkit to Build a Frameworkless App
+title: My Go Toolkit to Build a (quite) Frameworkless App
 published: true
-description: How I manage to build a frameworkless app with Golang
+description: How I manage to build a (quite) frameworkless app with Golang
 tags: go, tools, githunt, framework
 cover_image: https://thepracticaldev.s3.amazonaws.com/i/sp6baiex1tjq736iz7lk.jpg
 ---

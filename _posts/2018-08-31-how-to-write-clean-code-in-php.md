@@ -1,13 +1,13 @@
 ---
 title: 🚥 How to Write Clean Code in PHP 🐘
 published: true
-description: PHP code static analysis tools
+description: This is the first of a 2-part's series about code quality. This is mainly about PHP, but wait, don't run way! you may still be interested if you code in some « serious language ».
 tags: cleancode, tools, codingstyle, PHP
 cover_image: https://thepracticaldev.s3.amazonaws.com/i/4wh6jqve5w0nio45ot6v.png
 series: How to Ensure You Write Clean Code
 ---
 
-This is the first part of a 2-parts' post about code quality.
+This is the first of a 2-part's series about code quality.
 This is mainly about **PHP**, but wait, don't run way!, you may still be interested if you code in some «_serious language_».
 
 ---

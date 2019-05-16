@@ -1,12 +1,12 @@
 ---
 title: How I Backup/Sync my Dotfiles & Apps
 published: true
-description: How I use git & some scripts to backup & sync my dotfiles
+description: How I use git hooks and some scripts to backup / sync my dotfiles
 tags: git, bash, productivity, automation
 cover_image: https://thepracticaldev.s3.amazonaws.com/i/nb6ovj9wqgr0v2s13fdh.jpg
 ---
 
-My concern is to automatize the backup of my configuration files (aka dotfiles) and to generate a snapshot of all installed apps, whether it be through my distro's package manager or throw third-party package manager like `npm` or `pip`. This is the first step before being able to sync my apps automatically on a newly installed computer (still to be done).
+My concern is to automatize the backup of my configuration files (aka dotfiles) and to generate a snapshot of all installed apps, whether it be through my distro's package manager or through third-party package manager like `npm` or `pip`. This is the first step before being able to sync my apps automatically on a newly installed computer (still to be done).
 
 ## <i class="fas fa-terminal"></i> Backuping dotfiles
 

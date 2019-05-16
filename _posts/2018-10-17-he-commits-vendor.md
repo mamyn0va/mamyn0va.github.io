@@ -1,7 +1,7 @@
 ---
 title: He Commits Vendor! 😱
 published: true
-description: discussion about vendoring
+description: Discussion about vendoring. What are pros and cons?
 tags: discuss, git, devtips, bestpractices 
 ---
 
@@ -16,6 +16,6 @@ What happened is that some developers (including myself) discovered that some ot
 - then there is no way one of them get injected by some malware dependency
 - finally you are not dependent of the network (or of the remote dependency repositories) during the build
 
-None of these arguments satisfied me, not that they're not true, but I think each of them can be solved in a cleaner way, for example by using a cache, a custom repository with audited dependencies, and by solving directly the network issues.
+None of these arguments satisfied me, not that they're not true, but I think each of them can be solved in a cleaner way, for example by using a cache, a custom registry with audited dependencies, and by solving directly the network issues.
 
 And you, what do you think?

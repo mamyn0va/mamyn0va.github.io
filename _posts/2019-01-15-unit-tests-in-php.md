@@ -1,7 +1,7 @@
 ---
 title: 🐘 Unit Tests in PHP
 published: true
-description: How to use PHPUnit to mock your dependencies
+description: How to structure your code and use PHPUnit to mock your dependencies
 tags: php, testing, showdev, quality
 cover_image: https://thepracticaldev.s3.amazonaws.com/i/c5rypwl3ykxxzvuvmkld.png
 ---
