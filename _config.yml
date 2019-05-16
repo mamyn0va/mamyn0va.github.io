@@ -3,7 +3,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is my personal blog, mainly focused on dev topics (PHP, Golang, productivity, quality...).
   You can find all my posts (and others) on <a href="https://dev.to" target="_blank"><i class="fab fa-dev"></i></a>.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://mamyn0va.github.io # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+redirect_url: "https://mamyn0va.github.io"
 github_username:  mamyn0va
 permalink: /:year/:month/:day/:title
 staticman_url: https://dev.staticman.net/v3/entry/github/mamyn0va/mamyn0va.github.io/master/comments

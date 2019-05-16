@@ -32,7 +32,7 @@ layout: default
   <h2>Leave a comment!</h2>
 
   <form method="POST" action="{{ site.staticman_url }}">
-    <input name="options[redirect]" type="hidden" value="{{ site.url | append: page.url }}">
+    <input name="options[redirect]" type="hidden" value="{{ site.redirect_url | append: page.url }}">
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
     <p><textarea name="fields[message]" cols="62" rows="4" placeholder="your message"></textarea></p>
     <p>
@@ -46,10 +46,10 @@ layout: default
 
   {%- if comments.size > 0 -%}
 
-  <h3>{{ comments | size }} comment(s)</h3>
+  <h3 style="border-bottom:#373737;border-bottom-style:solid;border-bottom-width:2px">{{ comments | size }} comment(s)</h3>
 
   {% for comment in comments %}
-    <div style="border-bottom:#373737;border-bottom-style:solid;border-bottom-width:2px">
+    <div style="border-bottom:#373737;border-bottom-style:solid;border-bottom-width:1px">
       <p><strong>{{ comment[1].name }}</strong> on {{ comment[1].date | date: "%-d %B %Y" }}</p>
       <p>{{ comment[1].message }}</p>
     </div>
