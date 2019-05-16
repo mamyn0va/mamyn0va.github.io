@@ -41,7 +41,7 @@ layout: default
   <form method="POST" action="{{ site.staticman_url }}">
     <input name="options[redirect]" type="hidden" value="{{ site.redirect_url | append: page.url }}">
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-    <p><textarea name="fields[message]" style="width:auto" rows="4" placeholder="your message"></textarea></p>
+    <p><textarea name="fields[message]" style="width:80%" rows="4" placeholder="your message"></textarea></p>
     <p>
       <input name="fields[name]" type="text" placeholder="name">
       <input name="fields[email]" type="email" placeholder="email">
