@@ -7,7 +7,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 redirect_url: "https://mamyn0va.github.io"
 github_username:  mamyn0va
 permalink: /:year/:month/:day/:title
-staticman_url: https://dev.staticman.net/v3/entry/github/mamyn0va/mamyn0va.github.io/master/comments
+disqus:
+    shortname: mamyn0va.github.io
 
 # Build settings
 markdown: kramdown
