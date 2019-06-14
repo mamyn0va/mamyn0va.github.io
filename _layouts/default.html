@@ -16,6 +16,8 @@
 
   <body>
 
+    {% assign url_parts = page.url | split: "/" %}
+
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
@@ -41,6 +43,7 @@
       <section id="main_content" class="inner">
         {{ content }}
       </section>
+      <img src="{{ site.dolomonurl }}{{ url_parts.last | default: "home" }}">
     </div>
 
     <!-- FOOTER  -->
@@ -49,14 +52,11 @@
         {% if site.github.is_project_page %}
         <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <p>Published with <i class="fab fa-github-alt"></i> <a href="https://pages.github.com">GitHub Pages</a> with 🧪 <a href="https://jekyllrb.com/">Jekyll</a> &amp; <a href="https://disqus.com/">Disqus</a></p>
+        <p>Icons by <a href="https://icons8.com">Icons8</a> <img style="vertical-align:middle" src="https://img.icons8.com/color/18/000000/icons8-new-logo.png"> &amp; <a href="https://fontawesome.com">Font Awesome</a> <i class="fab fa-font-awesome"></i></p>
         <p class="rss-subscribe"><i class="fas fa-rss-square"></i> subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
       </footer>
     </div>
-
-    {% assign url_parts = page.url | split: "/" %}
-
-    <img src="{{ site.dolomonurl }}{{ url_parts.last | default: "home" }}">
 
   </body>
 </html>
