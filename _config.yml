@@ -9,6 +9,7 @@ github_username:  mamyn0va
 permalink: /:year/:month/:day/:title
 disqus:
     shortname: mamyn0va.github.io
+dolomonurl: https://framaclic.org/h/my-blog-
 
 # Build settings
 markdown: kramdown
