@@ -43,7 +43,9 @@
       <section id="main_content" class="inner">
         {{ content }}
       </section>
+      {% if jekyll.environment == "production" %}
       <img src="{{ site.dolomonurl }}{{ url_parts.last | default: "home" }}">
+      {% endif %}
     </div>
 
     <!-- FOOTER  -->

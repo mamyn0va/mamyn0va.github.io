@@ -23,7 +23,7 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-  - staticman.yml
+  - .gitignore
   - Gemfile
   - Gemfile.lock
   - node_modules
